@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+}
+
+.titre {
+	display: flex;
+	flex-direction: column;
+}
+
+h1 {
+	color: #260f08;
+	font-family: "Red Hat Text", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	line-height: 48px;
+	text-align: left;
+}
+
+.nourriture-parent {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr;
+	gap: 12px 0;
+    justify-self: center;
+}
+
+.dessert-nom {
+	color: #87635a;
+	font-family: "Red Hat Text", sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18.52px;
+	text-align: left;
+	margin-top: 3%;
+}
+
+h3 {
+	color: #260f08;
+	font-family: "Red Hat Text", sans-serif;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 21.17px;
+	margin-top: 3%;
+}
+
+h4 {
+	color: #c73b0f;
+	font-family: "Red Hat Text", sans-serif;
+	font-weight: 600;
+	line-height: 21.17px;
+	font-size: 16px;
+}
+
+img {
+	border-radius: 8px;
+}
+
+.your-cart-parent {
+	display: grid;
+	flex-direction: column;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+}
+
+.your-cart {
+	height: 35vh;
+}
+
+h2 {
+	color: #c73b0f;
+	font-family: "Red Hat Text", sans-serif;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 31.75px;
+}
+
+.texte-bas {
+	color: #87635a;
+	font-weight: 600;
+	font-size: 14px;
+	font-family: "Red Hat Text", sans-serif;
+	line-height: 18.52px;
+	text-align: center;
+}
+
+@media screen and (min-width: 376px) {
+	.nourriture-parent {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-self: center;
+        gap: 15px 15px;
+	}
+
+	.your-card-parent {
+		flex-direction: column;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+        gap: 2% 2%;
+        align-items: center;
+	}
+
+	.img {
+		width: 65%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.nourriture-parent {
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		justify-self: center;
+        gap: 20px 20px;
+	}
+
+    h1{
+        text-align: none;
+    }
+    
+	.your-cart-parent {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+	}
+
+	.your-cart {
+		flex-direction: column;
+		height: 35vh;
+        justify-content: left;
+
+	}
+    
+    .texte-bas{
+        text-align: left;
+    }
+
+	.img {
+		width: 75%;
+	}
+}
